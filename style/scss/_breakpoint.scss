@@ -65,7 +65,6 @@
   .main {
     .hero {
       .hero__row {
-        user-select: none;
         .hero__header {
           grid-template-columns: unset;
           grid-template-rows: repeat(2, auto);

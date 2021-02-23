@@ -30,7 +30,7 @@ li {
 
 body,
 html {
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
 }
 
 :root {
@@ -102,6 +102,13 @@ html {
 
 .darkmode__theme .content {
   background-color: var(--dark-desaturated-blue);
+}
+
+.hero__button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .main {
@@ -289,12 +296,6 @@ html {
 }
 
 @media screen and (max-width: 753px) {
-  .main .hero .hero__row {
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-  }
   .main .hero .hero__row .hero__header {
     -ms-grid-columns: unset;
         grid-template-columns: unset;

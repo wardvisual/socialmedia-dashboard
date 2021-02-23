@@ -9,7 +9,10 @@ switchBtn.addEventListener(`click`, () => {
     switchBtn.classList.add("lightmode");
 
     switchBtn.style = `
-    background: var(--toggle-light-theme);
+      background: var(--toggle-light-theme);
+    `;
+    btnSlider.style = `
+      background: var(--white);
     `;
     toggleName.textContent = "Light Mode";
     toggleName.style = `color: var(--dark-grayish-blue)`;
@@ -17,9 +20,13 @@ switchBtn.addEventListener(`click`, () => {
   } else if (switchBtn.classList.contains("lightmode")) {
     switchBtn.classList.remove("lightmode");
     switchBtn.classList.add("darkmode");
+
     switchBtn.style = `
         background: var(--toggle-dark-theme);
       `;
+    btnSlider.style = `
+      background: var(--very-dark-blue);
+    `;
 
     toggleName.textContent = "Dark Mode";
     lightmode();
