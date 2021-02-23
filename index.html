@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social Media Dashboard</title>
+
+    <!-- Costum CSS -->
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+  <body>
+    <div class="main darkmode__theme" id="main">
+      <div class="hero">
+        <div class="hero__row">
+          <!-- HEADER -->
+          <div class="hero__header">
+            <div class="hero__text">
+              <h1>Social Media Dashboard</h1>
+              <p><span>Total Followers: 23,004</span></p>
+            </div>
+            <hr />
+            <div class="hero__button">
+              <span id="hero__switch__name">Dark Mode</span>
+              <div class="hero__switch darkmode" id="hero__switch">
+                <div class="switch__slider" id="switch__slider"></div>
+              </div>
+            </div>
+          </div>
+          <!-- CONTENTS -->
+          <div class="hero__contents" id="social-media__dashboard"></div>
+        </div>
+        <div class="hero__row">
+          <!-- HEADER -->
+          <div class="hero__header">
+            <div class="hero__text">
+              <h1>Overview - Today</h1>
+            </div>
+          </div>
+          <!-- CONTENTS -->
+          <div class="hero__contents" id="overview__today"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script defer src="./js/dashboard.js"></script>
+    <script defer src="./js/darkmode.js"></script>
+  </body>
+</html>
