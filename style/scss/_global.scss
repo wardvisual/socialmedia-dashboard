@@ -72,3 +72,7 @@
     background-color: var(--dark-desaturated-blue);
   }
 }
+
+.hero__button {
+  user-select: none;
+}
