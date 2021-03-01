@@ -41,7 +41,7 @@
   --font-size-2-mobile: 1.5rem;
 }
 
-.lightmode__theme {
+.hero--theme-light {
   background-color: var(--white);
 
   h1 {
@@ -52,12 +52,12 @@
     color: var(--dark-grayish-blue);
   }
 
-  .content {
+  .hero__dashboard-content {
     background-color: var(--light-grayish-blue);
   }
 }
 
-.darkmode__theme {
+.hero--theme-dark {
   background-color: var(--very-dark-blue2);
   h1 {
     color: var(--white);
@@ -68,7 +68,7 @@
     color: var(--dark-grayish-blue);
   }
 
-  .content {
+  .hero__dashboard-content {
     background-color: var(--dark-desaturated-blue);
   }
 }

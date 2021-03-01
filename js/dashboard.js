@@ -111,7 +111,7 @@ const dashboard = [
 const renderSocialMediaDashboard = () => {
   dashboard[0].map((data) => {
     socialMediaBoard.innerHTML += `
-        <div class="content" style="border-top: 0.3rem ${data.colors[0]} solid">
+        <div class="hero__dashboard-content" style="border-top: 0.3rem ${data.colors[0]} solid">
             <a href="#"
             ><img src="${data.icon}" alt="social media icon" />
             <p><span>${data.username}</span></p></a
@@ -127,7 +127,7 @@ const renderSocialMediaDashboard = () => {
 const renderOverviewToday = () => {
   dashboard[1].map((data) => {
     overviewBoard.innerHTML += `
-            <div class="content overview__row">
+            <div class="hero__dashboard-content overview__row">
             <p>${data.title}</p>
               <a href="#"><img src="${data.icon}" alt="social media icon" /> </a>
               <h1>${data.count}</h1>

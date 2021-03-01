@@ -1,7 +1,7 @@
 const switchBtn = document.querySelector(`#hero__switch`);
-const btnSlider = document.querySelector(`#switch__slider`);
+const btnSlider = document.querySelector(`#hero__switch--slider`);
 const main = document.querySelector(`#main`);
-const toggleName = document.querySelector(`#hero__switch__name`);
+const toggleName = document.querySelector(`#hero__switch--name`);
 
 switchBtn.addEventListener(`click`, () => {
   if (switchBtn.classList.contains("darkmode")) {
@@ -34,18 +34,18 @@ switchBtn.addEventListener(`click`, () => {
 });
 
 const darkmode = () => {
-  main.classList.contains("darkmode__theme") &&
-    main.classList.remove("darkmode__theme");
-  main.classList.add("lightmode__theme");
+  main.classList.contains("hero--theme-dark") &&
+    main.classList.remove("hero--theme-dark");
+  main.classList.add("hero--theme-light");
   document.body.style = `
     background-color: var(--white);
   `;
 };
 
 const lightmode = () => {
-  main.classList.contains("lightmode__theme") &&
-    main.classList.remove("lightmode__theme");
-  main.classList.add("darkmode__theme");
+  main.classList.contains("hero--theme-light") &&
+    main.classList.remove("hero--theme-light");
+  main.classList.add("hero--theme-dark");
   document.body.style = `
     background-color: var(--very-dark-blue2);
     `;

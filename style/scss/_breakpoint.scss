@@ -1,7 +1,7 @@
 @media screen and (max-width: 375px) {
-  .main {
+  .hero {
     padding-bottom: 4rem;
-    .hero {
+    &__content {
       grid-gap: 4rem;
       margin: 2rem 1rem 0 1rem;
       padding: 0 0 2rem 0;
@@ -9,34 +9,32 @@
       h1 {
         font-size: 1.2rem;
       }
+    }
 
-      .hero__row {
-        .hero__contents {
-          .content {
-            font-size: 14px;
-
-            h1 {
-              font-size: var(--font-size-1-mobile);
-            }
-            p:nth-child(3) {
-              letter-spacing: 0.1rem;
-            }
-          }
-          .overview__row {
-            h1 {
-              font-size: var(--font-size-2-mobile);
-            }
-          }
+    &__dashboard {
+      .overview__row {
+        h1 {
+          font-size: var(--font-size-2-mobile);
         }
+      }
+    }
+    &__dashboard-content {
+      font-size: 14px;
+
+      h1 {
+        font-size: var(--font-size-1-mobile);
+      }
+      p:nth-child(3) {
+        letter-spacing: 0.1rem;
       }
     }
   }
 }
 
 @media screen and (min-width: 376px) and (max-width: 1440px) {
-  .main {
+  .hero {
     padding-bottom: 4rem;
-    .hero {
+    &__content {
       grid-gap: 4rem;
       margin: 2rem 2.5rem 0 2.5rem;
       padding: 0 0 3rem 0;
@@ -50,39 +48,31 @@
 
 // listing grid
 @media screen and (max-width: 1016px) {
-  .main {
-    .hero {
-      .hero__row {
-        .hero__contents {
-          grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        }
-      }
+  .hero {
+    &__dashboard {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     }
   }
 }
 
 @media screen and (max-width: 753px) {
-  .main {
-    .hero {
-      .hero__row {
-        .hero__header {
-          grid-template-columns: unset;
-          grid-template-rows: repeat(2, auto);
-          justify-content: unset;
+  .hero {
+    &__header {
+      grid-template-columns: unset;
+      grid-template-rows: repeat(2, auto);
+      justify-content: unset;
 
-          hr {
-            display: block;
-            height: 1px;
-            opacity: 0.1;
-            background: var(--dark-grayish-blue);
-          }
-          .hero__button {
-            width: 100%;
-            justify-content: space-between;
-            margin: 1rem 0 2.5rem 0;
-          }
-        }
+      hr {
+        display: block;
+        height: 1px;
+        opacity: 0.1;
+        background: var(--dark-grayish-blue);
       }
+    }
+    &__button {
+      width: 100%;
+      justify-content: space-between;
+      margin: 1rem 0 2.5rem 0;
     }
   }
 }
