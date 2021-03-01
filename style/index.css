@@ -70,37 +70,37 @@ html {
   --font-size-2-mobile: 1.5rem;
 }
 
-.hero--theme-light {
+.hero--theme--light {
   background-color: var(--white);
 }
 
-.hero--theme-light h1 {
+.hero--theme--light h1 {
   color: var(--very-dark-blue);
 }
 
-.hero--theme-light p {
+.hero--theme--light p {
   color: var(--dark-grayish-blue);
 }
 
-.hero--theme-light .hero__dashboard-content {
+.hero--theme--light .hero__dashboard-content {
   background-color: var(--light-grayish-blue);
 }
 
-.hero--theme-dark {
+.hero--theme--dark {
   background-color: var(--very-dark-blue2);
 }
 
-.hero--theme-dark h1 {
+.hero--theme--dark h1 {
   color: var(--white);
 }
 
-.hero--theme-dark a,
-.hero--theme-dark p,
-.hero--theme-dark span {
+.hero--theme--dark a,
+.hero--theme--dark p,
+.hero--theme--dark span {
   color: var(--dark-grayish-blue);
 }
 
-.hero--theme-dark .hero__dashboard-content {
+.hero--theme--dark .hero__dashboard-content {
   background-color: var(--dark-desaturated-blue);
 }
 
